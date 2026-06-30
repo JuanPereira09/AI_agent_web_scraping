@@ -26,7 +26,5 @@ def rodar_agente(url: str):
         print(f"❌ Erro durante a análise da IA: {e}")
 
 if __name__ == "__main__":
-    # URL de teste aberta para scrapers
-    url_teste = "https://webscraper.io/test-sites/e-commerce/allinone/computers/laptops"
-    
+    url_teste = "https://www.mercadolivre.com.br/apple-iphone-15-128-gb-preto/p/MLB27339733"
     rodar_agente(url_teste)
