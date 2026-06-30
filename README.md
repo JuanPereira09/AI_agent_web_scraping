@@ -37,3 +37,31 @@ Independentemente da complexidade visual ou do idioma original da plataforma, o 
         "Endless OS"
     ]
 }
+
+⚙️ Como Executar o Projeto Localmente
+Clone o repositório:
+
+Bash
+git clone [https://github.com/JuanPereira09/AI_agent_web_scraping.git](https://github.com/JuanPereira09/AI_agent_web_scraping.git)
+cd AI_agent_web_scraping
+Instale as dependências:
+
+Bash
+pip install -r requirements.txt
+python -m playwright install
+Crie e configure o arquivo .env na raiz do projeto:
+
+Snippet de código
+GEMINI_API_KEY=sua_chave_do_google_ai_studio
+Execute a aplicação:
+
+Bash
+python src/main.py
+📈 Próximos Passos & Evolução (Visão de Engenharia)
+Para evolução deste MVP em um produto pronto para produção, as seguintes implementações estão mapeadas:
+
+[ ] Camada de Persistência: Integração com banco de dados relacional (SQLite/PostgreSQL) para histórico de preços.
+
+[ ] Evasão Avançada de Bloqueios: Implementação de Proxies rotativos e assinaturas TLS camufladas para contornar Firewalls/WAFs severos (como Cloudflare).
+
+[ ] Estratégia de Retry: Utilização da biblioteca tenacity para tolerância a falhas em picos de alta demanda da API de IA (Erros 503).
